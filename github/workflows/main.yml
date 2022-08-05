@@ -1,0 +1,9 @@
+name: send lasted code to s3
+on: [push]
+jobs:
+  checkout:
+   runs-on: ubuntu-lastest
+   steps:
+    - name: Checkout-lastest
+      uses: actions/checkout@v3
+      run : ls  
